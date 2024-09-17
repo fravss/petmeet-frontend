@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script> <!-- Link para o JavaScript -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Usuários</h1>
+
+        </header>
+
+        <!-- Formulário para criar novo usuário -->
+        <div id="novo-usuario-form" class="form-container">
+            <h2>Criar Novo Usuário</h2>
+            <form id="form-novo-usuario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required><br>
+                <div class="form-actions">
+                    <button type="submit">Criar</button>
+                    <button type="button" id="cancelar-btn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+        <button id="novo-usuario-btn">Criar Novo Usuário</button>
+
+        <main>
+            <table id="usuarios">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados serão inseridos aqui pelo jQuery -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
